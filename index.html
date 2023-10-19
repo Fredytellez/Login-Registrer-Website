@@ -22,17 +22,46 @@
             </ul>
         </div>
         <div class="nav-button">
-            <button class="btn whiteBtn" id="loginBtn">Sing In</button>
-            <button class="btn" id="registerBtn">Sing Up</button>
+            <button class="btn whiteBtn" id="loginBtn" onclick="login()">Sing In</button>
+            <button class="btn" id="registerBtn" onclick="register()">Sing Up</button>
         </div>
         <div class="nav-menu-btn">
-            <i class='bx bx-menu'></i>
+            <i class='bx bx-menu' onclick="myMenuFunction()"></i>
         </div>
     </nav>
 
     <!---------------- Form Box ------------------>
 
-    <div class="formbox">
+    <div class="form-box">
+
+        <!---------------Login Form------------------->
+        <div class="login-container" id="login">
+            <div class="top">
+                <span>Dont have an account? <a href="#" onclick="register()">Sign Up</a></span>
+                <header>Login</header>
+            </div>
+            <div class="input-box">
+                <input type="email" class="input-field" placeholder="Username or Email">
+                <i class="bx bx-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" placeholder="Password">
+                <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="input-box">
+                <input type="submit" class="submit" placeholder="Sign Up">
+            </div>
+            <div class="two-col">
+                <div class="one">
+                    <input type="checkbox" id="login-check">
+                    <label for="login-check">Remember Me</label>
+                </div>
+                <div class="two">
+                    <label><a href="#">Forgot password?</a></label>
+                </div>
+            </div>
+        </div>
+
         <!---------------Registration Form------------------->
         <div class="register-container" id="register">
             <div class="top">
